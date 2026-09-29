@@ -1,0 +1,28 @@
+# Dados brutos e processados — nunca versionar (podem ter centenas de MB)
+data/raw/
+data/processed/
+
+# Ambiente virtual
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Banco DuckDB (regenerável a partir de data/raw/)
+*.duckdb
+*.duckdb.wal
+
+# Saídas geradas (regeneráveis rodando o pipeline)
+ri_outputs/
+eda_outputs/
+
+# Credenciais / variáveis de ambiente
+.env
+
+# Editor / SO
+.vscode/
+.DS_Store

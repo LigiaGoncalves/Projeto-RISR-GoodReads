@@ -1,17 +1,4 @@
-"""
-src/evaluation.py
-===================
-Avaliação experimental dos três modelos: pooling cego de resultados
-(para julgamento de relevância sem viés de saber qual modelo gerou o
-quê) e cálculo de Precision, Recall, F1 e nDCG (opcional).
 
-Sobre pooling: com um corpus grande, é inviável julgar relevância de
-TODO documento para cada consulta. A prática padrão, TREC-style,
-consiste em  unir os top-K resultados de cada modelo, embaralhar, e julgar só esse
-conjunto sem saber a origem de cada resultado. Isso é uma aproximação:
-Recall é calculado sobre o pool julgado, não sobre o corpus inteiro.
-Declare essa limitação no README.
-"""
 
 import math
 

@@ -1,16 +1,3 @@
-"""
-main.py
-========
-Orquestra o pipeline completo do Projeto 1 (Buscador):
-carrega o corpus -> constrói o índice -> ajusta o modelo vetorial ->
-gera (ou lê) o pool de julgamento de relevância -> calcula as métricas.
-
-Rode duas vezes:
-  1a vez: python main.py            -> gera ri_outputs/judgment_pool.csv
-          (preencha a coluna relevant_0_ou_1 manualmente)
-  2a vez: python main.py            -> calcula e salva as métricas
-"""
-
 from pathlib import Path
 
 import pandas as pd
@@ -25,8 +12,7 @@ OUTPUT_DIR.mkdir(exist_ok=True)
 
 TOP_K = 10
 
-# Ajuste esta lista depois de rodar explore_vocabulary.py (notebooks/) e ver
-# o vocabulário real do seu corpus — veja a seção 5.1 do README.
+
 TEST_QUERIES = [
     "second chance love story",
     "contemporary romance",
